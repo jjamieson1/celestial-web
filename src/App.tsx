@@ -1,5 +1,6 @@
 import { Button, ButtonGroup, Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
+import ContentGrid from "./components/ContentGrid";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
         <GridItem area="aside">aside</GridItem>
       </Show>
       <GridItem area="aside">aside</GridItem>
-      <GridItem area="main">main</GridItem>
+      <GridItem area="main">
+        <ContentGrid />
+      </GridItem>
     </Grid>
   );
 }
